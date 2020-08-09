@@ -1,0 +1,86 @@
+@charset "utf-8"; 
+/* CSS Document */
+@import url("common.css");
+
+body{background:#eaedf5; padding:0 20px;}
+h1{font-size:32px; font-weight:normal; font-family:NGB; color:#264ba0; text-align:center; margin:30px 0;}
+h1 span{display:block;  font-size:14px; line-height:20px;} 
+
+ul{background:#fff;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+ul li{hieght:50px; line-height:50px; border-top:1px solid #e5e5e5; box-sizing:border-box; padding:0 12px; box-sizing:border-box;}
+ul li span.title{display:block; height:50px; line-height:50px; font-size:14px; color:#555; font-family:NGB; box-sizing:border-box;}
+
+input[type="text"],
+input[type="password"]{height:40px; line-height:40px; margin:0; padding:0; width:100%; border:none; vertical-align:top; box-sizing:border-box;}
+
+ul li span.title .btn_B{display:inline-block; padding:0 10px; background:#666; height:30px; line-height:30px; float:right; margin-top:10px;}
+ul li span.title .btn_B span{font-size:13px; color:#fff;}
+
+p{line-height:20px; font-size:13px; margin:15px 0;}
+
+.btnArea{margin:20px 0;}
+.btnArea .left{float:left; display:inline-block; box-sizing:border-box; padding-right:4px;}
+.btnArea .right{float:right; display:inline-block; box-sizing:border-box; padding-left:4px;}
+.btnArea .btn_B{display:inline-block; height:32px; line-height:32px; text-align:center; background:#636363; width:100%; box-sizing:border-box; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.btnArea .btn_B span{font-size:14px; color:#fff; font-family:NGB;}
+.btnArea .btn_blue{display:inline-block; height:32px; line-height:32px; text-align:center; background:#264ba0; width:100%; box-sizing:border-box; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.btnArea .btn_blue span{font-size:14px; color:#fff; font-family:NGB;}
+
+.policy{margin-top:30px;}
+.policy.first{margin-top:0; padding-bottom:20px; border-bottom:1px solid #ddd;}
+.policy h4{line-height:22px; font-size:16px; font-family:NGB; font-weight:normal; background:url(../images/sub/check_off.png) no-repeat right center; padding-right:60px;}
+.policy h4.on{background:url(../images/sub/check_on.png) no-repeat right center;}
+.policy h4 em{color:#264ba0; font-family:NGB; margin-left:5px; font-size:14px;}
+.policy .textArea{width:100%; height:150px; background:#fff; margin-top:15px;  padding:10px; box-sizing:border-box; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; overflow-y:auto;}
+
+.login{background:#f5f5f5; padding:20px;}
+.loginWarp{width:100%; height:100%; background:#fff; border:1px solid #eaeaea; padding:30px; box-sizing:border-box;}
+.loginWarp fieldset{margin-top:60px;}
+.loginWarp fieldset input[type="text"],
+.loginWarp fieldset input[type="password"]{height:60px; line-height:60px; margin:0; padding:0; width:100%; border:1px solid #e5e5e5; vertical-align:top; padding:0 12px; font-size:18px; color:#999999; font-weight:300;  box-sizing:border-box; margin-bottom:10px;}
+.loginWarp fieldset input[type="checkbox"]{ height:14px; line-height:14px; margin-right:6px;}
+.loginWarp fieldset label span{height:14px; line-height:14px;font-size:14px; color:#171515; font-weight:400;}
+.loginWarp fieldset .btn_login{display:inline-block; width:100%; height:60px; line-height:60px; background:#264ba0; text-align:center; margin-bottom:10px;}
+.loginWarp fieldset .btn_login span{font-size:22px; font-weight:600; color:#fff;}
+.loginWarp .btn_join{display:inline-block; width:100%; height:60px; line-height:60px; box-sizing:border-box; border:1px solid #e1e1e1; background:#f9f9f9; text-align:center; margin-top:30px;}
+.loginWarp .btn_join span{font-size:18px; font-weight:400; color:#333;}
+
+/* 20180115_박지예수정 */
+
+/* website */
+#websiteWrap  {word-break: keep-all; color:#767676; }
+#websiteWrap h4 { padding:0 0 15px; color:#666; font-size:16px; font-weight:normal; font-family:NGB;}
+#websiteWrap h5 { padding:0 0 5px; color:#084ba0; font-size:14px; }
+#websiteWrap div { padding:0 0 20px; }
+#websiteWrap div li { padding:2px 0 }
+#websiteWrap div li li { padding:0 0 0 18px; }
+#websiteWrap ul li{border:none; line-height:24px;}
+#websiteWrap p{padding:0; margin:0; line-height:24px;}
+
+/* privacyProcess */
+#privacyProcess {word-break: keep-all; }
+#privacyProcess h4 { padding:0 0 15px; color:#666; font-size:16px; font-weight:normal; font-family:NGB;}
+#privacyProcess h5 { padding:10px 0 0 0; color:#084ba0; font-size:14px; }
+#privacyProcess p { color:#767676; }
+#privacyProcess div { padding:0 0 20px }
+#privacyProcess div h4 { padding:0 0 15px; color:#666; font-size:16px; font-weight:normal; font-family:NGB;}
+#privacyProcess div h5 { padding:10px 0 0 0; color:#084ba0; font-size:14px; }
+#privacyProcess div p { color:#767676; }
+#privacyProcess div ul { padding:5px 0 0 0; }
+#privacyProcess div li { padding:2px 0; color:#767676; font-weight:normal }
+#privacyProcess div li li { padding:2px 0 2px 18px; font-size:11px }
+#privacyProcess ul li{border:none; line-height:24px;}
+#privacyProcess p{padding:0; margin:0; line-height:24px;}
+
+#privacyProcess .table_type03 h5 { padding:10px 0 5px 0; color:#084ba0 }
+#privacyProcess .table_type03 p { padding:10px 0 0 0 }
+#privacyProcess table{width:100%; border-top:1px solid #aaa; border-right:1px solid #ccc;}
+#privacyProcess table td{border-left:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px 5px; text-align:center;}
+/* termsCustomer */
+#termsCustomer div { padding:0 0 38px }
+#termsCustomer div h4 { display:block; padding:0 0 10px }
+#termsCustomer div span { color:#e62805; font-size:11px }
+
+/* 본인인증정보 관련 페이지 추가 _ 20180405 박지예 추가  */
+form label{margin-right:14px;}
+form input[type="radio"]{margin-right:4px;}
