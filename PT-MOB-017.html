@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>:: 렌터카공제조합 포털 ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<div class="viewArea">
+        <p class="val"><em>회의결과</em>를 안내해드립니다.</p>
+		<!-- table-->
+		<table cellpadding="0" cellspacing="0" summary="회의결과 리스트" class="list_table">
+		<caption>회의결과 리스트</caption>
+			<colgroup>
+				<col width="20%" />
+				<col width="*%" />
+			</colgroup>
+			<tr>
+				<th class="L">회의명</th>
+				<td class="L">모바일 회의관리 구축방안 협의</td>
+			</tr>
+			<tr>
+				<th class="L">회의결과</th>
+				<td class="L">
+                	<p>회의결과 내용이 표시됩니다.회의결과 내용이 표시됩니다.회의결과 내용이 표시됩니다.회의결과 내용이 표시됩니다.회의결과 내용이 표시됩니다.회의결과 내용이 표시됩니다.회의결과 내용이 표시됩니다.회의결과 내용이 표시됩니다.</p>
+                </td>
+			</tr>
+			<tr>
+				<th class="L">첨부자료</th>
+				<td class="L">
+                    <div class="file">
+                        <ul>
+                            <li><a href="#">(붙임1)행사개최_보도자료.hwp</a></li>
+                            <li><a href="#">(붙임2)행사개최_보도자료.hwp</a></li>
+                        </ul>
+                    </div>                
+                </td>
+            </tr>
+		</table>
+	</div>
+		<!-- table//--> 
+	<div class="btnArea">
+		<div class="right W_100"><a class="btn_B" href="#"><span>닫기</span></a></div>
+	</div>
+</div>
+</body>
+<script>
+function div_OnOff(v,id){
+	$(".every").css("display","none");
+	 if(v == "2"){
+	  $("#everyweek").css("display","block"); // 보여줌
+	 }else if(v == "3"){
+	  $("#everymonth").css("display","block"); // 보여줌
+	 }else if(v == "4"){
+	  $("#everyyear").css("display","block");  // 보여줌
+	 }else{
+	 $(".every").css("display","none");  // 숨김
+	 }
+}
+</script>
+
+</html>
+
+
+

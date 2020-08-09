@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>:: 렌터카공제조합 포털 ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+    <!-- searchArea-->
+    <div class="tsearchArea search">
+        <fieldset>
+            <div class="inputbox W_30">
+                <p class="txt"></p>
+                <select id="list_order">
+                    <option>회의명</option>
+                    <option>신청자</option>
+                    <option>장소</option>
+                </select>
+            </div> 
+            <label for="search"></label><input type="text" class="W_60" id="search" />
+        </fieldset>
+		<a class="btn_search" href="#"><img src="images/sub/btn_search.png" alt="검색" /></a>
+    </div>
+    <!-- searchArea//-->
+    <!-- 상세검색 조건 추가 -->
+    <ul id="info" class="info">
+          <li><div class="info_title">+ 상세검색 추가</div>
+            <ul>
+                <li>
+                    <div class="datebox">
+                        <label for="date_start"><input type="text" name="date_start" id="date_start" class="W_30 date" /></label> ~ <label for="date_finish"><input type="text" name="date_finish" id="date_finish" class="W_30 date" /></label>
+                        <div class="inputbox W_30">
+                            <p class="txt"></p>
+                            <select>
+                                <option>상태전체</option>
+                            </select>
+                        </div> 
+                    </div>
+                </li>
+            </ul>					
+        </li>
+    </ul>
+    <!-- 상세검색 조건 추가 //-->
+	<!-- listArea -->
+	<div class="list add">
+		<ul>
+			<li>
+				<a href="#">
+                	<img src="images/sub/icon_request.png" alt="신청" />
+					<p><span class="title">회의관리 모바일 개발 업무협의</span></p>
+					<span class="date">2017.09.21 18;15 ~ 2017.09.21 18;15</span>				
+                    </a>
+			</li>
+			<li>
+				<a href="#">
+                	<img src="images/sub/icon_request.png" alt="신청" />
+					<p><span class="title">회의관리 모바일 개발 업무협의</span></p>
+					<span class="date">2017.09.21 18;15 ~ 2017.09.21 18;15</span>				
+                </a>
+			</li>
+			<li>
+				<a href="#">
+                	<img src="images/sub/icon_success.png" alt="완료" />
+					<p><span class="title">회의관리 모바일 개발 업무협의</span></p>
+					<span class="date">2017.09.21 18;15 ~ 2017.09.21 18;15</span>				
+                </a>
+			</li>
+		</ul>
+	</div>
+    <!-- tcontrol-->
+    <div class="tcontrol">
+        <!-- paging -->
+        <div class="paging">            	
+            <a class="no_bg" href="#" title="처음페이지"><img src="images/sub/btn_page_first.png" alt="첫 페이지로 이동" /></a> <a class="no_bg" href="#" title="이전페이지"><img src="images/sub/btn_page_prev.png" alt="이전 페이지로 이동" /></a> <a href="#" class="first">1</a> <a href="#" class="on">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a class="no_bg" href="#"><img src="images/sub/btn_page_next.png" alt="다음 페이지로 이동" title="다음페이지"/></a> <a class="no_bg" href="#"><img src="images/sub/btn_page_last.png" alt="마지막 페이지로 이동" title="마지막페이지" /></a>
+        </div>
+        <!-- paging//-->
+    </div>
+    <!-- tcontrol//-->
+</div>
+</body>
+</html>
+
+
+
+

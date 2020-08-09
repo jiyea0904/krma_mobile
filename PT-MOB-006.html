@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>:: 렌터카공제조합 포털 ::</title>
+<link rel="stylesheet" type="text/css" href="css/sub.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+</head>
+<body class="iframe">
+<div class="board">
+	<div class="viewArea">
+		<!-- table-->
+		<table cellpadding="0" cellspacing="0" summary="일정" class="list_table">
+		<caption>일정</caption>
+			<colgroup>
+				<col width="20%" />
+				<col width="*%" />
+			</colgroup>
+			<tr>
+				<th class="L">일정</th>
+				<td class="L">전체일정 / 홍길동(부사장)</td>
+			</tr>
+			<tr>
+				<th class="L">제목</th>
+				<td class="L"><label for="title"><input type="text" id="title" name="title" class="W_100" /></label></td>
+			</tr>
+			<tr>
+				<th class="L">시간</th>
+				<td class="L">
+                	<fieldset class="during">
+						<label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" /><span>종일</span></label>
+						<div class="date">
+							<label for="date_start"><input type="text" name="date_start" id="date_start" class="W_40 date" /></label>
+							<div class="inputbox W_20">
+								<p class="txt"></p>
+								<select>
+									<option>01</option>
+								</select>
+							</div> 
+							<div class="inputbox W_20">
+								<p class="txt"></p>
+								<select>
+									<option>01</option>
+								</select>
+							</div>
+							<span>~</span>
+						</div>
+						<div class="date">
+							<label for="date_fin"><input type="text" name="date_fin" id="date_end" class="W_40 date" /></label>
+							<div class="inputbox W_20">
+								<p class="txt"></p>
+								<select>
+									<option>01</option>
+								</select>
+							</div> 
+							<div class="inputbox W_20">
+								<p class="txt"></p>
+								<select>
+									<option>01</option>
+								</select>
+							</div> 
+						</div>
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<th class="L">반복</th>
+				<td class="L">
+					<fieldset>
+						<label for="radio_01"><input type="radio" name="radio_01" id="radio_01" value="1" onclick="div_OnOff(this.value,'every');" /><span>반복없음</span></label>
+						<label for="radio_02"><input type="radio" name="radio_01" id="radio_02" value="2" onclick="div_OnOff(this.value,'everyweek');" /><span>매주</span></label>
+						<label for="radio_03"><input type="radio" name="radio_01" id="radio_03" value="3" onclick="div_OnOff(this.value,'everymonth');" /><span>매월</span></label>
+						<label for="radio_04"><input type="radio" name="radio_01" id="radio_04" value="4" onclick="div_OnOff(this.value,'everyyear');" /><span>매년</span></label>
+					</fieldset>
+					<div>
+						<fieldset class="every" id="everyweek" style="display:none;">
+							<p>반복요일</p>
+							<label for="sun"><input type="checkbox" name="sun" id="sun" /><span>일</span></label>
+							<label for="mon"><input type="checkbox" name="mon" id="mon" /><span>월</span></label>
+							<label for="tue"><input type="checkbox" name="tue" id="tue" /><span>화</span></label>
+							<label for="wed"><input type="checkbox" name="wed" id="wed" /><span>수</span></label>
+							<label for="thr"><input type="checkbox" name="thr" id="thr" /><span>목</span></label>
+							<label for="fri"><input type="checkbox" name="fri" id="fri" /><span>금</span></label>
+							<label for="sat"><input type="checkbox" name="sat" id="sat" /><span>토</span></label>
+						</fieldset>
+						<fieldset class="every" id="everymonth" style="display:none;">
+							<p>반복횟수 :
+								<label for="month"><input type="text" name="month" id="month" class="W_40" /></label></p>
+							<p>반복일 : <span>일정시작일 기준</span></p>
+						</fieldset>
+						<fieldset class="every" id="everyyear" style="display:none;">
+							<p>반복횟수 :
+								<label for="year"><input type="text" name="year" id="year" class="W_40" /></label></p>
+							<p>반복일 : <span>일정시작일 기준</span></p>
+						</fieldset>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th class="L">중요도</th>
+				<td class="L">
+					<fieldset>
+						<label for="radio_05"><input type="radio" name="radio_02" id="radio_05" /><span>보통</span></label>
+						<label for="radio_06"><input type="radio" name="radio_02" id="radio_06" /><span>낮음</span></label>
+						<label for="radio_07"><input type="radio" name="radio_02" id="radio_07" /><span>높음</span></label>
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<th class="L">내용</th>
+				<td class="L"><textarea></textarea></td>
+			</tr>
+		</table>
+	</div>
+		<!-- table//--> 
+	<div class="btnArea">
+		<div class="left W_33"><a class="btn_W" href="#"><span>삭제</span></a></div>
+		<div class="center W_33"><a class="btn_W" href="#"><span>취소</span></a></div>
+		<div class="right W_33"><a class="btn_B" href="#"><span>등록</span></a></div>
+	</div>
+</div>
+</body>
+<script>
+function div_OnOff(v,id){
+	$(".every").css("display","none");
+	 if(v == "2"){
+	  $("#everyweek").css("display","block"); // 보여줌
+	 }else if(v == "3"){
+	  $("#everymonth").css("display","block"); // 보여줌
+	 }else if(v == "4"){
+	  $("#everyyear").css("display","block");  // 보여줌
+	 }else{
+	 $(".every").css("display","none");  // 숨김
+	 }
+}
+</script>
+
+</html>
+
+
+
